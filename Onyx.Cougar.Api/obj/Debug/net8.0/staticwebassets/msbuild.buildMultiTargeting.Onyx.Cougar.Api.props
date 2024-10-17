@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/Onyx.Cougar.Api.props" />
+</Project>

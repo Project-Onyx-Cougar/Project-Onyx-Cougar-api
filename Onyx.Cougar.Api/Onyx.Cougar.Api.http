@@ -1,0 +1,6 @@
+@Onyx.Cougar.Api_HostAddress = http://localhost:5270
+
+GET {{Onyx.Cougar.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

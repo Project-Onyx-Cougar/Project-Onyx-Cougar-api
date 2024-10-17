@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Onyx.Cougar.Api", "Onyx.Cougar.Api\Onyx.Cougar.Api.csproj", "{26D60488-EEA4-4977-9BBA-4F0B51A24282}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Onyx.Cougar.Domain", "Onyx.Cougar.Domain\Onyx.Cougar.Domain.csproj", "{2EF64F0B-286B-4DCF-B3FA-D1D0627DF456}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26D60488-EEA4-4977-9BBA-4F0B51A24282}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26D60488-EEA4-4977-9BBA-4F0B51A24282}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26D60488-EEA4-4977-9BBA-4F0B51A24282}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26D60488-EEA4-4977-9BBA-4F0B51A24282}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EF64F0B-286B-4DCF-B3FA-D1D0627DF456}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EF64F0B-286B-4DCF-B3FA-D1D0627DF456}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EF64F0B-286B-4DCF-B3FA-D1D0627DF456}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EF64F0B-286B-4DCF-B3FA-D1D0627DF456}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
