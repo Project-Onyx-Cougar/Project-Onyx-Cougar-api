@@ -5,6 +5,7 @@
 /Users/michelle/AMIS4630/Repos/Project-Onyx-Cougar-api/Onyx.Cougar.Domain/obj/Debug/net8.0/Onyx.Cougar.Domain.AssemblyInfoInputs.cache
 /Users/michelle/AMIS4630/Repos/Project-Onyx-Cougar-api/Onyx.Cougar.Domain/obj/Debug/net8.0/Onyx.Cougar.Domain.AssemblyInfo.cs
 /Users/michelle/AMIS4630/Repos/Project-Onyx-Cougar-api/Onyx.Cougar.Domain/obj/Debug/net8.0/Onyx.Cougar.Domain.csproj.CoreCompileInputs.cache
+/Users/michelle/AMIS4630/Repos/Project-Onyx-Cougar-api/Onyx.Cougar.Domain/obj/Debug/net8.0/Onyx.Cougar.Domain.sourcelink.json
 /Users/michelle/AMIS4630/Repos/Project-Onyx-Cougar-api/Onyx.Cougar.Domain/obj/Debug/net8.0/Onyx.Cougar.Domain.dll
 /Users/michelle/AMIS4630/Repos/Project-Onyx-Cougar-api/Onyx.Cougar.Domain/obj/Debug/net8.0/refint/Onyx.Cougar.Domain.dll
 /Users/michelle/AMIS4630/Repos/Project-Onyx-Cougar-api/Onyx.Cougar.Domain/obj/Debug/net8.0/Onyx.Cougar.Domain.pdb

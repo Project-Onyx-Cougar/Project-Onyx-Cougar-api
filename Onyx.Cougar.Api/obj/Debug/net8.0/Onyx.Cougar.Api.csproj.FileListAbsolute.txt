@@ -17,6 +17,7 @@
 /Users/michelle/AMIS4630/Repos/Project-Onyx-Cougar-api/Onyx.Cougar.Api/obj/Debug/net8.0/Onyx.Cougar.Api.csproj.CoreCompileInputs.cache
 /Users/michelle/AMIS4630/Repos/Project-Onyx-Cougar-api/Onyx.Cougar.Api/obj/Debug/net8.0/Onyx.Cougar.Api.MvcApplicationPartsAssemblyInfo.cs
 /Users/michelle/AMIS4630/Repos/Project-Onyx-Cougar-api/Onyx.Cougar.Api/obj/Debug/net8.0/Onyx.Cougar.Api.MvcApplicationPartsAssemblyInfo.cache
+/Users/michelle/AMIS4630/Repos/Project-Onyx-Cougar-api/Onyx.Cougar.Api/obj/Debug/net8.0/Onyx.Cougar.Api.sourcelink.json
 /Users/michelle/AMIS4630/Repos/Project-Onyx-Cougar-api/Onyx.Cougar.Api/obj/Debug/net8.0/staticwebassets.build.json
 /Users/michelle/AMIS4630/Repos/Project-Onyx-Cougar-api/Onyx.Cougar.Api/obj/Debug/net8.0/staticwebassets.development.json
 /Users/michelle/AMIS4630/Repos/Project-Onyx-Cougar-api/Onyx.Cougar.Api/obj/Debug/net8.0/staticwebassets/msbuild.Onyx.Cougar.Api.Microsoft.AspNetCore.StaticWebAssets.props
@@ -31,3 +32,5 @@
 /Users/michelle/AMIS4630/Repos/Project-Onyx-Cougar-api/Onyx.Cougar.Api/obj/Debug/net8.0/Onyx.Cougar.Api.pdb
 /Users/michelle/AMIS4630/Repos/Project-Onyx-Cougar-api/Onyx.Cougar.Api/obj/Debug/net8.0/Onyx.Cougar.Api.genruntimeconfig.cache
 /Users/michelle/AMIS4630/Repos/Project-Onyx-Cougar-api/Onyx.Cougar.Api/obj/Debug/net8.0/ref/Onyx.Cougar.Api.dll
+/Users/michelle/AMIS4630/Repos/Project-Onyx-Cougar-api/Onyx.Cougar.Api/bin/Debug/net8.0/Onyx.Cougar.Domain.dll
+/Users/michelle/AMIS4630/Repos/Project-Onyx-Cougar-api/Onyx.Cougar.Api/bin/Debug/net8.0/Onyx.Cougar.Domain.pdb

@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace jet.piranha.Api
+namespace onyx.cougar.Api
 {
     public class Program
     {

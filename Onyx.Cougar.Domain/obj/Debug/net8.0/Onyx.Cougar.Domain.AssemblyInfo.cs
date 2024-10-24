@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Onyx.Cougar.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd1064b88f7eced2e913a4edc956b536ed0a7bb4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0352adf336683908243fce6b3704d1bee9e365a5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Onyx.Cougar.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Onyx.Cougar.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

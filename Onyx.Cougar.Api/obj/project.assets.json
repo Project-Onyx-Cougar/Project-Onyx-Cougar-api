@@ -107,6 +107,16 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "Onyx.Cougar.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Onyx.Cougar.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Onyx.Cougar.Domain.dll": {}
+        }
       }
     }
   },
@@ -451,11 +461,17 @@
         "swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "Onyx.Cougar.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Onyx.Cougar.Domain/Onyx.Cougar.Domain.csproj",
+      "msbuildProject": "../Onyx.Cougar.Domain/Onyx.Cougar.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.AspNetCore.OpenApi >= 8.0.8",
+      "Onyx.Cougar.Domain >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
@@ -483,7 +499,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/michelle/AMIS4630/Repos/Project-Onyx-Cougar-api/Onyx.Cougar.Domain/Onyx.Cougar.Domain.csproj": {
+              "projectPath": "/Users/michelle/AMIS4630/Repos/Project-Onyx-Cougar-api/Onyx.Cougar.Domain/Onyx.Cougar.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

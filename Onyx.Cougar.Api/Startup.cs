@@ -4,7 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace jet.piranha.Api
+namespace onyx.cougar.Api
 {
     public class Startup
     {
