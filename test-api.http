@@ -1,0 +1,13 @@
+GET http://localhost:5237/swagger
+
+GET https://localhost:5237/swagger
+
+POST https://localhost:5237/swagger
+Content-Type: application/json
+
+{
+    "name": "Shoes",
+    "description": "Ohio State shoes",
+    "brand": "Nike",
+    "price": 129.99
+}
