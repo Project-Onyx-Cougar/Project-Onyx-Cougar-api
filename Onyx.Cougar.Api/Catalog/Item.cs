@@ -10,6 +10,10 @@ namespace Onyx.Cougar.Domain.Catalog
         public string Brand { get; set; }
         public decimal Price { get; set; }
 
+
+
+        public List<Rating> Ratings { get; set; } = new List<Rating>(); 
+
         public Item(string name, string description, string brand, decimal price)
         {
             if (string.IsNullOrEmpty(name))
@@ -36,6 +40,11 @@ namespace Onyx.Cougar.Domain.Catalog
             Description = description;
             Brand = brand;
             Price = price;
+        }
+
+        public void AddRating(Rating rating)
+        {
+            this.Ratings.Add(rating);
         }
     }
 }
