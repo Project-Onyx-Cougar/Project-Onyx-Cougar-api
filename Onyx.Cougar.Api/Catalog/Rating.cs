@@ -8,7 +8,7 @@ namespace Onyx.Cougar.Domain.Catalog
 
         public string Brand { get; set; }
         public decimal Price { get; set; }
-        public List<Rating> Ratings { get; set; } = new List<Rating>();
+        //public List<Rating> Ratings { get; set; } = new List<Rating>();
 
         public Rating(int stars, string userName, string review)
         {
@@ -27,10 +27,10 @@ namespace Onyx.Cougar.Domain.Catalog
             this.Review = review;
         }
 
-        public void AddRating(Rating rating)
+       /* public void AddRating(Rating rating)
         {
             this.Ratings.Add(rating);
-        }
+        }*/
     }
 }
 
