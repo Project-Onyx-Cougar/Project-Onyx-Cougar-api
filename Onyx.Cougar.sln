@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Onyx.Cougar.Api", "Onyx.Cou
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Onyx.Cougar.Domain", "Onyx.Cougar.Domain\Onyx.Cougar.Domain.csproj", "{7075B1F9-3680-4581-893B-0469AB5E8472}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Onyx.Cougar.Data", "Onyx.Cougar.Data\Onyx.Cougar.Data.csproj", "{16981A56-622F-48BE-8859-EE0647ECBC5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{7075B1F9-3680-4581-893B-0469AB5E8472}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7075B1F9-3680-4581-893B-0469AB5E8472}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7075B1F9-3680-4581-893B-0469AB5E8472}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16981A56-622F-48BE-8859-EE0647ECBC5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16981A56-622F-48BE-8859-EE0647ECBC5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16981A56-622F-48BE-8859-EE0647ECBC5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16981A56-622F-48BE-8859-EE0647ECBC5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Onyx.Cougar.Domain\Onyx.Cougar.Domain.csproj" />
+    <ProjectReference Include="..\Onyx.Cougar.Data\Onyx.Cougar.Data.csproj" />
   </ItemGroup>
 
 </Project>
