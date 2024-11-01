@@ -5,7 +5,7 @@ using Onyx.Cougar.Data;
 namespace Onyx.Cougar.Api.Controllers
 {
     [ApiController]
-    [Route("/catalog")]
+    [Route("[controller]")]
     public class CatalogController : ControllerBase
     {
         private readonly StoreContext _db;

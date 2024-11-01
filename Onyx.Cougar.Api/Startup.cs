@@ -24,7 +24,7 @@ namespace onyx.cougar.Api
             services.AddSwaggerGen();
             services.AddDbContext<StoreContext>(options =>
                 options.UseSqlite("Data Source=../Registrar.sqlite",
-                    b => b.MigrationsAssembly("onyx.cougar.Api")));
+                    b => b.MigrationsAssembly("Onyx.Cougar.Api")));
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
