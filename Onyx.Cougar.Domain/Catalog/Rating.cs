@@ -2,12 +2,13 @@ namespace Onyx.Cougar.Domain.Catalog
 {
     public class Rating
     {
+        public int Id { get; set; }
         public int Stars { get; set; }
         public string UserName { get; set; }
         public string Review { get; set; }
 
-        public string Brand { get; set; }
-        public decimal Price { get; set; }
+        // public string Brand { get; set; }
+        // public decimal Price { get; set; }
         //public List<Rating> Ratings { get; set; } = new List<Rating>();
 
         public Rating(int stars, string userName, string review)
