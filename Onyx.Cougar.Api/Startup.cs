@@ -1,8 +1,10 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Onyx.Cougar.Data;
 
 namespace onyx.cougar.Api
 {
@@ -20,6 +22,9 @@ namespace onyx.cougar.Api
             services.AddControllers();
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen();
+            services.AddDbContext<StoreContext>(options =>
+                options.UseSqlite("Data Source=../Registrar.sqlite",
+                    b => b.MigrationsAssembly("onyx.cougar.Api")));
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
