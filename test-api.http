@@ -7,7 +7,7 @@ Content-Type: application/json
 
 {
     "name": "Shoes",
-    "description": "Ohio State shoes",
+    "description": "Running Shoes",
     "brand": "Nike",
-    "price": 129.99
+    "price": 109.99
 }

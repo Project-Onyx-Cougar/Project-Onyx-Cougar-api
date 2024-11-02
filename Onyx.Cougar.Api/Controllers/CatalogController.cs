@@ -35,6 +35,8 @@ namespace Onyx.Cougar.Api.Controllers
         [HttpPost]
         public IActionResult Post(Item item)
         {
+            _db.Items.Add(item);
+            _db.SaveChanges();
             return Created("/catalog/42", item);
         }
 
