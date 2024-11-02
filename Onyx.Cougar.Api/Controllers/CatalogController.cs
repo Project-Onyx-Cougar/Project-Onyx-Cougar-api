@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Onyx.Cougar.Domain.Catalog;
 using Onyx.Cougar.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Onyx.Cougar.Api.Controllers
 {
@@ -52,13 +53,25 @@ namespace Onyx.Cougar.Api.Controllers
 
             item.AddRating(rating);
             _db.SaveChanges();
-            
+
             return Ok(item);
         }
 
         [HttpPut("{id:int}")]
-        public IActionResult Put(int id, Item item)
+        public IActionResult Put(int id, [FromBody] Item item)
         {
+            if (id != item.Id) 
+            {
+                return BadRequest();
+            }
+            if (_db.Items.Find(id) == null) 
+            {
+                return NotFound();
+            }
+
+            _db.Entry(item).State = EntityState.Modified;
+            _db.SaveChanges();
+
             return NoContent();
         }
 
