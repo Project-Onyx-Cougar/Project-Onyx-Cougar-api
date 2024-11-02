@@ -44,9 +44,15 @@ namespace Onyx.Cougar.Api.Controllers
         [HttpPost("{id:int}/ratings")]
         public IActionResult PostRating(int id, [FromBody] Rating rating)
         {
-            var item = new Item("Shirt", "Ohio State shirt.", "Nike", 29.99m);
-            item.Id = id;
+            var item = _db.Items.Find(id);
+            if (item == null)
+            {
+                return NotFound();
+            }
+
             item.AddRating(rating);
+            _db.SaveChanges();
+            
             return Ok(item);
         }
 
