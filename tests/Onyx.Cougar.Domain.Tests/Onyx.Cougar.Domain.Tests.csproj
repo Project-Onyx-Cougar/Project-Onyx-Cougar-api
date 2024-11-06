@@ -20,4 +20,8 @@
     <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Onyx.Cougar.Domain\Onyx.Cougar.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
