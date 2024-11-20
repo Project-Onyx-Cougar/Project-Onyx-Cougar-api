@@ -17,7 +17,8 @@ namespace Onyx.Cougar.Domain.Orders
     public class OrderItem
     {
         public int Id {get; set;}
-        public Item Item {get; set;}
+        // public Item Item {get; set;}
+        public Onyx.Cougar.Domain.Catalog.Item Item { get; set; } // Fully qualified name
         public int Quantity {get; set;}
         public decimal Price => Item.Price * Quantity;
     }

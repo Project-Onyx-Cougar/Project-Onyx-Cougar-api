@@ -11,3 +11,17 @@ Content-Type: application/json
     "brand": "Nike",
     "price": 109.99
 }
+
+//sending login details to Auth0 to get token in response
+### GET token from Auth0
+curl --request POST \
+  --url https://dev-68f66mm5jc1evuxm.us.auth0.com/oauth/token \
+  --header 'content-type: application/json' \
+  --data '{"client_id":"8hAiN8lrAcudHCVP2HCAjIgyp62ZTtSz","client_secret":"Jf65Ch7dZ8AmrLRbHyeKwK6FIPGYDV8e1DlqWZXayPcV3i0H-5OuzS8eL4XmTSFl","audience":"https://onyx-cougar","grant_type":"client_credentials"}'
+
+
+//token then used to prove that you are allowed to perform DELETE action
+### DELETE a Item to the Catalog collection
+curl --request DELETE \
+  --url http://localhost:5237/catalog/3 \
+  --header 'authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik84UTl0aHV3Z3p5QVU4UkVYMFZncCJ9.eyJpc3MiOiJodHRwczovL2Rldi02OGY2Nm1tNWpjMWV2dXhtLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiI4aEFpTjhsckFjdWRIQ1ZQMkhDQWpJZ3lwNjJaVHRTekBjbGllbnRzIiwiYXVkIjoiaHR0cHM6Ly9vbnl4LWNvdWdhciIsImlhdCI6MTczMjA1MDIxMCwiZXhwIjoxNzMyMTM2NjEwLCJzY29wZSI6ImRlbGV0ZTpjYXRhbG9nIiwiZ3R5IjoiY2xpZW50LWNyZWRlbnRpYWxzIiwiYXpwIjoiOGhBaU44bHJBY3VkSENWUDJIQ0FqSWd5cDYyWlR0U3oifQ.YfI6I2mQJfoYGlssiX-L6N2IlFeg7j2GDup6nz-AwrPwBicJVvgQRnFSJ0-upnO3sCZgU5bElvcotcmAo0MBcpxPja7Dmw_d9TjUQ33zEYSCcV-BpxWic7A0OL_eGIe_Fhf2QUodarBZIpGnIwz4muNyolOW9CIOh_kYjrYYWtsyGrP97dH3J2vQZBcu4FS69UKiAgQMgfqZ5rPYhtNWk1mJ-sCZUmLMY7wyyBO2PfXXy-ZJDdR0R6fxuwCmMSo0rTYVeZEy30o6nntYX-tRd_ymnuAMnNyaJ7QPARSxXjzJb4m622s8zfdx6hbOtySNEhLeQkc9YLBwCNqo_rmYLA'

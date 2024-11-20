@@ -7,6 +7,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
 using Onyx.Cougar.Data;
+using Onyx.Cougar.Api.Security;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace onyx.cougar.Api
 {
@@ -21,9 +23,44 @@ namespace onyx.cougar.Api
 
         public void ConfigureServices(IServiceCollection services)
         {
+            string authority = Configuration["Auth0:Authority"]
+                ?? throw new ArgumentNullException("Auth0:Authority");
+
+            string audience = Configuration["Auth0:Audience"]
+                ?? throw new ArgumentNullException("Auth0:Audience");
+
             services.AddControllers();
+
+            services.AddAuthentication(options =>
+                {   
+                    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                })
+.               AddJwtBearer(options =>
+                {
+                    options.Authority = authority;
+                    options.Audience = audience;
+                });
+
+            // Add authorization
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("delete:catalog", policy =>
+                    policy.RequireAuthenticatedUser()
+                          .RequireClaim("scope", "delete:catalog"));
+            });
+
+
+
             services.AddEndpointsApiExplorer();
-            services.AddSwaggerGen();
+            //services.AddSwaggerGen();
+
+            services.AddSwaggerGen(c =>
+            {
+                c.CustomSchemaIds(type => type.FullName); // Use fully qualified names for all schemas
+            });
+
+
             services.AddDbContext<StoreContext>(options =>
                 options.UseSqlite("Data Source=../Registrar.sqlite",
                 b => b.MigrationsAssembly("Onyx.Cougar.Api"))
@@ -37,7 +74,7 @@ namespace onyx.cougar.Api
                         .AllowAnyMethod();
                 });
             });
-            services.AddEndpointsApiExplorer();
+            //services.AddEndpointsApiExplorer();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -46,14 +83,16 @@ namespace onyx.cougar.Api
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "jet.piranha.Api v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Onyx.Cougar.Api v1"));
             }
 
             app.UseHttpsRedirection();
-            
-            app.UseCors();
 
             app.UseRouting();
+
+            app.UseCors();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 
